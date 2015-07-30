@@ -28,6 +28,7 @@ $light-grey: #F5F5F5;
 .content {
   flex: 1 1 auto;
   overflow: scroll;
+  position: relative;
 }
 
 .container {
