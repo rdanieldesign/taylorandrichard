@@ -1,3 +1,8 @@
+@import 'colors';
+@import 'fonts';
+@import 'navigation';
+
+
 // RESETS
 
 * {
@@ -10,10 +15,6 @@ ul, li, a {
   margin: 0;
   padding: 0;
 }
-
-// COLORS
-
-$light-grey: #F5F5F5;
 
 // STYLES
 
@@ -50,28 +51,6 @@ $light-grey: #F5F5F5;
 
   &:nth-child(2n){
     background: $light-grey;
-  }
-}
-
-.navigation {
-  flex: 0 0 4rem;
-  width: 100%;
-  display: flex;
-  background: white;
-  border-bottom: 2px $light-grey solid;
-  z-index: 99;
-
-  &__list {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    flex-flow: row nowrap;
-    padding-top: 1.4rem;
-
-    &-item {
-      flex: 1 1 auto;
-      text-align: center;
-    }
   }
 }
 

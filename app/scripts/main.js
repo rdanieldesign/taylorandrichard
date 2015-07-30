@@ -4,6 +4,7 @@ var TAR = {
 
 	init: function(){
 		this.scrollAnimation();
+		this.toggleNav();
 	},
 
 	scrollAnimation: function(){
@@ -17,6 +18,13 @@ var TAR = {
 				}, 1000);
 				return false;
 			}
+		});
+	},
+
+	toggleNav: function(){
+		$('#menu').click(function(e){
+			e.preventDefault();
+			$('.navigation__list').toggleClass('active');
 		});
 	}
 
