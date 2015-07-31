@@ -1,0 +1,21 @@
+.registry-options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(100vh - 14rem);
+  flex-flow: column nowrap;
+
+	@media (min-width: 650px){
+		flex-flow: row nowrap;
+		height: auto;
+	}
+
+  &__item {
+    background: $light-grey;
+    flex: 0 0 32%;
+
+		@media (min-width: 650px){
+			height: 16rem;
+		}
+  }
+}
