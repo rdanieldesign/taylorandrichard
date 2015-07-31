@@ -16,6 +16,7 @@ var TAR = {
 				$('.content').animate({
 					scrollTop: target.offsetTop
 				}, 1000);
+				$('.navigation__list').toggleClass('active');
 				return false;
 			}
 		});
