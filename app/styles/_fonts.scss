@@ -1,0 +1,19 @@
+$playfair: 'Playfair Display', serif;
+$raleway: 'Raleway', sans-serif;
+
+@mixin headline {
+	font-family: $playfair;
+	letter-spacing: .03em;
+}
+
+@mixin subHead {
+	font-family: $raleway;
+	font-weight: 100;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+}
+
+@mixin copy {
+	font-family: $raleway;
+	font-weight: 400;
+}
