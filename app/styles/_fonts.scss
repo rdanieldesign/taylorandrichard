@@ -3,7 +3,8 @@ $raleway: 'Raleway', sans-serif;
 
 @mixin headline {
 	font-family: $playfair;
-	letter-spacing: .03em;
+	letter-spacing: .06em;
+	text-transform: uppercase;
 }
 
 @mixin subHead {

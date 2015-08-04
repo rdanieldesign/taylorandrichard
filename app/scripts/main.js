@@ -28,7 +28,6 @@ var TAR = {
 			$('.navigation__list').toggleClass('active');
 		});
 	}
-
 };
 
 $(function() {
