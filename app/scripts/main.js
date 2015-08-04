@@ -5,6 +5,9 @@ var TAR = {
 	init: function(){
 		this.scrollAnimation();
 		this.toggleNav();
+		this.detectScroll();
+
+		this.navShowing = true;
 	},
 
 	scrollAnimation: function(){
@@ -16,7 +19,9 @@ var TAR = {
 				$('.content').animate({
 					scrollTop: target.offsetTop
 				}, 1000);
-				$('.navigation__list').toggleClass('active');
+				if (this.hash !== '#top'){
+					$('.navigation__list').toggleClass('active');
+				}
 				return false;
 			}
 		});
@@ -27,7 +32,22 @@ var TAR = {
 			e.preventDefault();
 			$('.navigation__list').toggleClass('active');
 		});
+	},
+
+	detectScroll: function(){
+		var lastScrollTop = $('.content').scrollTop();
+		$('.content').scroll(function(){
+			var st = $(this).scrollTop();
+			if (st > lastScrollTop + 15){
+				$('.navigation, .top').hide();
+			} else if(st < lastScrollTop - 15) {
+				$('.navigation, .top').show();
+			}
+			lastScrollTop = st;
+		});
 	}
+
+
 };
 
 $(function() {
