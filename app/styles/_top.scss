@@ -5,8 +5,9 @@
   width: 100%;
 
   a {
-    color: white;
-    background-color: black;
+    border: 2px $light-grey solid;
+    border-bottom: 0;
+    background-color: $white;
     padding: .25rem .5rem;
   }
 }

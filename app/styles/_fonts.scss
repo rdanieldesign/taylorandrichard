@@ -17,4 +17,5 @@ $raleway: 'Raleway', sans-serif;
 @mixin copy {
 	font-family: $raleway;
 	font-weight: 400;
+	line-height: 1.6em;
 }

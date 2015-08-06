@@ -11,6 +11,7 @@
 * {
   @include copy;
   box-sizing: border-box;
+  color: $grey;
 }
 
 ul, li, a {
@@ -51,23 +52,25 @@ p {
 
 .container {
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
   text-align: center;
+  margin: 0 auto;
 
   &-fullscreen {
-    height: calc(100vh - 4rem);
-    padding: 2rem;
+    min-height: calc(100vh - 4rem);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+
+    &:nth-child(2n){
+      background: $light-grey;
+    }
   }
 
   &__content {
-  }
-
-  &:nth-child(2n){
-    background: $light-grey;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1000px;
   }
 }
 
