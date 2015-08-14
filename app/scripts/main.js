@@ -5,7 +5,7 @@ var TAR = {
 	init: function(){
 		this.scrollAnimation();
 		this.toggleNav();
-		this.detectScroll();
+		// this.detectScroll();
 
 		this.navShowing = true;
 	},

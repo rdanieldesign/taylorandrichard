@@ -11,11 +11,21 @@
 	}
 
   &__item {
-    background: $light-grey;
     flex: 0 0 32%;
+    display: flex;
+    align-items: center;
 
 		@media (min-width: 650px){
 			height: 16rem;
 		}
+
+    a {
+      flex: 1 1 auto;
+    }
+
+    svg {
+      width: 90%;
+      fill: $grey;
+    }
   }
 }
