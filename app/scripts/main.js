@@ -8,6 +8,7 @@ var TAR = {
 		// this.detectScroll();
 
 		this.navShowing = true;
+		this.svgInject();
 	},
 
 	scrollAnimation: function(){
@@ -48,6 +49,13 @@ var TAR = {
 			lastScrollTop = st;
 		}, 250);
 		$('.content').scroll(calculateScroll);
+	},
+
+	svgInject: function(){
+		$.getJSON('../svg.json', function(data){
+			console.log(data);
+		});
+		console.log($('#svg-ws'));
 	}
 };
 
