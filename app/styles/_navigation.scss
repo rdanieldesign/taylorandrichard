@@ -1,58 +1,52 @@
-@import 'colors';
-
 .navigation {
-  @include title;
-  font-size: .85rem;
-  flex: 0 0 4rem;
-  width: 100%;
-  display: flex;
-  background: white;
-  border-bottom: 2px $light-grey solid;
-  z-index: 99;
-
-  &__list {
+    @include title;
+    font-size: 0.85rem;
+    flex: 0 0 4rem;
     width: 100%;
-    max-width: 1000px;
     display: flex;
-    flex-flow: column nowrap;
+    background: $black;
+    border-bottom: 2px $light-grey solid;
+    z-index: 99;
+    &__list {
+        background: $black;
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        flex-flow: column nowrap;
+        @media (min-width: 650px) {
+            flex-flow: row nowrap;
+            padding-top: 1.4rem;
+        }
+        &-item {
+            display: none;
+            flex: 0 0 4rem;
+            text-align: center;
+            border-bottom: 2px $light-grey solid;
+            padding-top: 1.4rem;
+            @media (min-width: 650px) {
+                flex: 1 1 auto;
+                display: block;
+                padding: 0;
+                border-bottom: 0;
+            }
+            .active & {
+                display: block;
+            }
 
-		@media (min-width: 650px){
-			flex-flow: row nowrap;
-			padding-top: 1.4rem;
-		}
-
-    &-item {
-			display: none;
-      flex: 0 0 4rem;
-      text-align: center;
-			background: $white;
-			border-bottom: 2px $light-grey solid;
-      padding-top: 1.4rem;
-
-			@media (min-width: 650px){
-				flex: 1 1 auto;
-				display: block;
-				padding: 0;
-				border-bottom: 0;
-			}
-
-			.active & {
-				display: block;
-			}
-
-			&-mobile {
-				display: block;
-
-				@media (min-width: 650px){
-					display: none;
-				}
-
-				.active & {
-					@media (min-width: 650px){
-						display: none;
-					}
-				}
-			}
+            a {
+                color: $off-white;
+            }
+            &-mobile {
+                display: block;
+                @media (min-width: 650px) {
+                    display: none;
+                }
+                .active & {
+                    @media (min-width: 650px) {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
-  }
 }
