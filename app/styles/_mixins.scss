@@ -1,0 +1,16 @@
+$thin-border: 1px solid $grey;
+
+@mixin thin-btn {
+    border: $thin-border;
+    border-radius: 2px;
+    -webkit-transition: border .1s, background-color .1s;
+    transition: border .1s, background-color .1s;
+}
+
+@mixin thin-btn-hover {
+    color: $white;
+    background-color: $black;
+    border-color: $black;
+    -webkit-transition: all .1s;
+    transition: all .1s;
+}
