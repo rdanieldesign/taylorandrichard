@@ -1,10 +1,11 @@
 .intro {
     &_icon {
-        height: 2rem;
+        height: 2.5rem;
     }
     h1 {
         text-align: center;
         font-size: 3rem;
+        margin: 2.2rem 0;
         vertical-align: middle;
         @media (min-width: 650px) {
             font-size: 5rem;
@@ -48,11 +49,17 @@
     }
     .date {
         display: inline-block;
+        position: relative;
+        left: -8px;
+        margin-top: 0.2rem;
 
         p {
             @include subHead;
             font-size: 1rem;
             display: inline;
+            vertical-align: middle;
+            padding-bottom: 0.4rem;
+            border-bottom: $thin-border;
 
             &:nth-child(3) {
                 font-size: 1.3rem;
@@ -63,7 +70,10 @@
             @include subHead;
             font-size: 6rem;
             display: inline-block;
-            margin: 0 1rem;
+            margin: 0 1.5rem 0 1rem;
+            vertical-align: middle;
+            letter-spacing: 0;
+            line-height: 6.5rem;
         }
     }
 }

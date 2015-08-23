@@ -1,5 +1,7 @@
 @import 'colors';
+@import 'mixins';
 @import 'fonts';
+@import 'sections';
 @import 'navigation';
 @import 'intro';
 @import 'registry';
@@ -11,7 +13,7 @@
 * {
   @include copy;
   box-sizing: border-box;
-  color: $grey;
+  text-align: center;
 }
 
 ul, li, a {
@@ -19,6 +21,7 @@ ul, li, a {
   list-style: none;
   margin: 0;
   padding: 0;
+  color: inherit;
 }
 
 h1 {
@@ -31,47 +34,4 @@ h2 {
 
 p {
   @include copy;
-}
-
-// STYLES
-
-.wrapper {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  overflow: hidden;
-}
-
-.content {
-  flex: 1 1 auto;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-  position: relative;
-}
-
-.container {
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-
-  &-fullscreen {
-    min-height: calc(100vh - 4rem);
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-
-    &:nth-child(2n){
-      background: url('../images/subtle_white_feathers.png') repeat;
-      background-color: $off-white;
-      background-size: 40%;
-    }
-  }
-
-  &__content {
-    margin: 0 auto;
-    padding: 2rem;
-    width: 100%;
-    max-width: 1000px;
-  }
 }

@@ -18,12 +18,16 @@
             padding-top: 1.4rem;
         }
         &-item {
+            color: $grey;
+            background-color: $off-white;
             display: none;
             flex: 0 0 4rem;
             text-align: center;
             border-bottom: 2px $light-grey solid;
             padding-top: 1.4rem;
             @media (min-width: 650px) {
+                color: $off-white;
+                background-color: $black;
                 flex: 1 1 auto;
                 display: block;
                 padding: 0;
@@ -33,10 +37,9 @@
                 display: block;
             }
 
-            a {
-                color: $off-white;
-            }
             &-mobile {
+                color: $off-white;
+                background-color: $black;
                 display: block;
                 @media (min-width: 650px) {
                     display: none;
