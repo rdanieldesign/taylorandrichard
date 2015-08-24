@@ -27,22 +27,35 @@
     justify-content: center;
     box-sizing: content-box;
 
-    &:nth-child(2n){
-      width: 95%;
-      border: $thin-border;
-      border-radius: 2px;
+    &:nth-child(2n) {
+    }
+
+    &:nth-child(2) {
+        padding: 4rem 0;
+        background: url('../images/floral3.jpg') repeat;
     }
   }
 
   &__content {
+    background-color: $off-white;
     margin: 0 auto;
-    padding: 2rem;
-    width: 100%;
-    max-width: 1000px;
+    padding: 4rem;
+    width: 90%;
+    max-width: 1040px;
 
     .section_icon {
         height: 1rem;
         margin: 1rem;
+    }
+
+    .end_icon {
+        height: 2rem;
+        margin: 1.4rem;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
   }
 }
