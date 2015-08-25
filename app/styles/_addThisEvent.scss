@@ -4,9 +4,13 @@
 		@include thin-btn;
 		cursor: pointer;
 		position: relative;
-		margin: .8rem auto 0  auto;
+		margin: 0 auto;
 		padding: .8rem 2rem;
 		width: 12rem;
+
+		@media (min-width: 475px) {
+            margin: .8rem auto 0  auto;
+        }
 
 		&:hover {
 			@include thin-btn-hover;

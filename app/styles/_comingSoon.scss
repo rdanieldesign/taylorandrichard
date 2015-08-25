@@ -1,0 +1,45 @@
+.coming-soon {
+    margin: 8rem auto 10rem auto;
+
+    img {
+        display: none;
+        height: 2rem;
+
+        @media (min-width: 550px) {
+            display: inline-block;
+        }
+
+        @media (min-width: 850px) {
+            height: 3rem;
+        }
+
+        &:first-child {
+            display: block;
+            margin: 0 auto 1rem;
+
+            @media (min-width: 550px) {
+                display: none;
+            }
+        }
+
+        &:nth-child(2) {
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+        }
+    }
+
+    h3 {
+        @include headline;
+        display: inline-block;
+        font-size: 2rem;
+        margin: 0 1rem;
+
+        @media (min-width: 850px) {
+            font-size: 3rem;
+        }
+    }
+}
