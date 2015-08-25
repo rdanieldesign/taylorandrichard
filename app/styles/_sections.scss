@@ -32,14 +32,22 @@
 
     &:nth-child(2) {
         padding: 4rem 0;
-        background: url('../images/floral3.jpg') repeat;
+        background: url('../images/floral1.jpg') repeat;
     }
+
+    &:nth-child(4) {
+        padding: 4rem 0;
+        background: url('../images/floral4.jpg') repeat;
+    }
+  }
+
+  &__enclosed {
+    padding: 4rem;
   }
 
   &__content {
     background-color: $off-white;
     margin: 0 auto;
-    padding: 4rem;
     width: 90%;
     max-width: 1040px;
 
