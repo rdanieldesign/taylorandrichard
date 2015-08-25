@@ -6,14 +6,10 @@
 		position: relative;
 		margin: .8rem auto 0  auto;
 		padding: .8rem 2rem;
-		width: 100%;
+		width: 12rem;
 
 		&:hover {
 			@include thin-btn-hover;
-		}
-
-		@media (min-width: 650px){
-			width: 12rem;
 		}
 
 		span {
