@@ -7,25 +7,34 @@
     background: $black;
     border-bottom: 2px $off-white solid;
     z-index: 99;
+
     &__list {
         background: $black;
         width: 100%;
         max-width: 1000px;
         display: flex;
         flex-flow: column nowrap;
+
         @media (min-width: 650px) {
-            flex-flow: row nowrap;
             padding-top: 1.4rem;
+            flex-flow: row nowrap;
         }
+
         &-item {
             color: $grey;
             background-color: $off-white;
-            display: none;
-            flex: 0 0 4rem;
+            height: 0;
+            flex: 0;
             text-align: center;
             border-bottom: $thin-border;
-            padding-top: 1.4rem;
+            opacity: 0;
+            padding-top: 0;
+            -webkit-transition: height .4s ease-out, flex .4s ease-out, padding-top .4s ease-out;
+            transition: height .4s ease-out, flex .4s ease-out, padding-top .4s ease-out;
+
             @media (min-width: 650px) {
+                opacity: 1;
+                height: auto;
                 color: $off-white;
                 background-color: $black;
                 flex: 1 1 auto;
@@ -33,17 +42,29 @@
                 padding: 0;
                 border-bottom: 0;
             }
+
             .active & {
-                display: block;
+                height: 4rem;
+                flex: 0 0 4rem;
+                opacity: 1;
+                padding-top: 1.4rem;
+                -webkit-transition: height .4s cubic-bezier(0, 1.06, 0.78, 1.06), flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), padding-top .4s cubic-bezier(0, 1.06, 0.78, 1.06);
+                transition: height .4s cubic-bezier(0, 1.06, 0.78, 1.06), flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), padding-top .4s cubic-bezier(0, 1.06, 0.78, 1.06);
             }
 
             &-mobile {
+                flex: 0 0 4rem;
+                height: 4rem;
+                opacity: 1;
                 color: $off-white;
                 background-color: $black;
                 display: block;
+                padding-top: 1.4rem;
+
                 @media (min-width: 650px) {
                     display: none;
                 }
+
                 .active & {
                     @media (min-width: 650px) {
                         display: none;

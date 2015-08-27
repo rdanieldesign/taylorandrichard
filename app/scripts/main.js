@@ -7,10 +7,11 @@ var TAR = {
 		this.toggleNav();
 		// this.detectScroll();
 
-		this.navShowing = true;
+		this.navShowing = false;
 	},
 
 	scrollAnimation: function(){
+		var self = this;
 		$('a[href*=#]:not([href=#])').click(function(e) {
 			e.preventDefault();
 			if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
@@ -19,8 +20,9 @@ var TAR = {
 				$('.content').animate({
 					scrollTop: target.offsetTop
 				}, 1000);
-				if (this.hash !== '#top'){
+				if (self.navShowing){
 					$('.navigation__list').toggleClass('active');
+					self.navShowing = false;
 				}
 				return false;
 			}
@@ -28,10 +30,20 @@ var TAR = {
 	},
 
 	toggleNav: function(){
+		var self = this;
 		$('#menu').click(function(e){
 			e.preventDefault();
 			$('.navigation__list').toggleClass('active');
+			if(self.navShowing){
+				self.navShowing = false;
+			} else {
+				self.navShowing = true;
+			}
 		});
+	},
+
+	animateNav: function(){
+		var self = this;
 	},
 
 	detectScroll: function(){
