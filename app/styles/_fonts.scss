@@ -11,15 +11,28 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ballpointregular';
+    src: url('fonts/ballpoint-regular-webfont.eot');
+    src: url('fonts/ballpoint-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ballpoint-regular-webfont.woff2') format('woff2'),
+         url('fonts/ballpoint-regular-webfont.woff') format('woff'),
+         url('fonts/ballpoint-regular-webfont.ttf') format('truetype'),
+         url('fonts/ballpoint-regular-webfont.svg#ballpointregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $playfair: 'Playfair Display', serif;
 $raleway: 'Raleway', sans-serif;
 $oswald: 'Oswald', sans-serif;
 $sackers: 'atsackersromanregular', sans-serif, serif;
+$ballpoint: 'ballpointregular', serif;
 
 @mixin headline {
-	font-family: $oswald;
-	letter-spacing: .08em;
-	text-transform: uppercase;
+	font-family: $ballpoint;
+	// letter-spacing: .08em;
+	// text-transform: uppercase;
     text-align: center;
 }
 

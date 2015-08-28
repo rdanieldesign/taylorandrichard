@@ -1,28 +1,29 @@
 .navigation {
     @include title;
     font-size: 0.85rem;
-    height: 4rem;
+    height: 3rem;
     position: fixed;
     width: 100%;
     display: flex;
-    background: $black;
+    background: $off-white;
+    opacity: .9;
     border-bottom: 2px $off-white solid;
     z-index: 99;
 
     &__list {
-        background: $black;
+        background: $off-white;
         width: 100%;
         max-width: 1000px;
         display: flex;
         flex-flow: column nowrap;
 
         @media (min-width: 650px) {
-            padding-top: 1.4rem;
+            padding-top: 1rem;
             flex-flow: row nowrap;
         }
 
         &-item {
-            color: $grey;
+            color: $black;
             background-color: $off-white;
             height: 0;
             flex: 0;
@@ -36,8 +37,8 @@
             @media (min-width: 650px) {
                 opacity: 1;
                 height: auto;
-                color: $off-white;
-                background-color: $black;
+                color: $black;
+                background-color: $off-white;
                 flex: 1 1 auto;
                 display: block;
                 padding: 0;

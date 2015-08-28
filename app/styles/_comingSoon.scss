@@ -34,13 +34,13 @@
     }
 
     h3 {
-        @include headline;
+        @include title;
         display: inline-block;
-        font-size: 2rem;
+        font-size: 1.3rem;
         margin: 0 1rem;
 
         @media (min-width: 850px) {
-            font-size: 3rem;
+            font-size: 1.3rem;
         }
     }
 }

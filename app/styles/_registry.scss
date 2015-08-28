@@ -5,7 +5,7 @@
   height: calc(100vh - 14rem);
   flex-flow: column nowrap;
 
-	@media (min-width: 650px){
+	@media (min-width: 850px){
 		flex-flow: row nowrap;
 		height: auto;
 	}
@@ -23,9 +23,14 @@
       flex: 1 1 auto;
     }
 
-    svg {
-      width: 90%;
+    img {
+        max-width: 100%;
+        width: 14rem;
       fill: $grey;
+
+      @media (min-width: 850px){
+        width: 75%;
+      }
     }
   }
 }
