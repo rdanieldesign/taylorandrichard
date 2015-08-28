@@ -1,7 +1,8 @@
 .navigation {
     @include title;
     font-size: 0.85rem;
-    flex: 0 0 4rem;
+    height: 4rem;
+    position: fixed;
     width: 100%;
     display: flex;
     background: $black;

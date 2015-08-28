@@ -17,8 +17,8 @@ var TAR = {
 			if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
 				var hash = this.hash.slice(1);
 				var target = document.getElementById(hash);
-				$('.content').animate({
-					scrollTop: target.offsetTop
+				$('body').animate({
+					scrollTop: target.offsetTop - 44
 				}, 1000);
 				if (self.navShowing){
 					$('.navigation__list').toggleClass('active');
