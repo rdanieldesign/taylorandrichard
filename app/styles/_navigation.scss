@@ -5,13 +5,15 @@
     position: fixed;
     width: 100%;
     display: flex;
-    background: $off-white;
     opacity: .9;
-    border-bottom: 2px $off-white solid;
     z-index: 99;
 
+    @media (min-width: 650px) {
+        background-color: $off-white;
+        background: url('../images/subtle_white_feathers_color.jpg') repeat;
+    }
+
     &__list {
-        background: $off-white;
         width: 100%;
         max-width: 1000px;
         display: flex;
@@ -25,6 +27,7 @@
         &-item {
             color: $black;
             background-color: $off-white;
+            background: url('../images/subtle_white_feathers_color.jpg') repeat;
             height: 0;
             flex: 0;
             text-align: center;
@@ -36,7 +39,7 @@
                 opacity: 1;
                 height: auto;
                 color: $black;
-                background-color: $off-white;
+                background: 0;
                 flex: 1 1 auto;
                 display: block;
                 padding: 0;
@@ -51,6 +54,17 @@
                 padding-top: 0.9rem;
                 -webkit-transition: height .4s cubic-bezier(0, 1.06, 0.78, 1.06), flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), -webkit-flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), padding-top .4s cubic-bezier(0, 1.06, 0.78, 1.06);
                 transition: height .4s cubic-bezier(0, 1.06, 0.78, 1.06), flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), -webkit-flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), padding-top .4s cubic-bezier(0, 1.06, 0.78, 1.06);
+
+                @media (min-width: 650px) {
+                    opacity: 1;
+                    height: auto;
+                    color: $black;
+                    background: 0;
+                    flex: 1 1 auto;
+                    display: block;
+                    padding: 0;
+                    border-bottom: 0;
+                }
             }
 
             &-mobile {
@@ -58,7 +72,7 @@
                 height: 3rem;
                 opacity: 1;
                 color: $black;
-                background-color: $off-white;
+                // background-color: $off-white;
                 display: block;
                 padding-top: 0.9rem;
 

@@ -2,6 +2,7 @@
   width: 100%;
   color: $grey;
   background-color: $off-white;
+  background: url('../images/subtle_white_feathers_color.jpg') repeat;
 }
 
 .content {
@@ -59,6 +60,7 @@
   }
 
   &__content {
+    background: url('../images/subtle_white_feathers_color.jpg') repeat;
     background-color: $off-white;
     margin: 0 auto;
     width: 90%;
