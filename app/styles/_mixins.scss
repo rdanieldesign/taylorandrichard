@@ -6,6 +6,7 @@ $thin-border: 1px solid $light-grey;
     border-radius: 2px;
     -webkit-transition: border .1s, background-color .1s;
     transition: border .1s, background-color .1s;
+    padding: .8rem 2rem;
 }
 
 @mixin thin-btn-hover {
