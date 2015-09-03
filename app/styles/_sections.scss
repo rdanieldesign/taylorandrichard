@@ -14,7 +14,7 @@
   margin: 0 auto;
 
   &-fullscreen {
-    min-height: calc(100vh - 4rem);
+    min-height: calc(100vh);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;

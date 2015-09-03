@@ -18,7 +18,7 @@ var TAR = {
 				var hash = this.hash.slice(1);
 				var target = document.getElementById(hash);
 				$('body').animate({
-					scrollTop: target.offsetTop - 44
+					scrollTop: target.offsetTop
 				}, 1000);
 				if (self.navShowing){
 					$('.navigation__list').toggleClass('active');
