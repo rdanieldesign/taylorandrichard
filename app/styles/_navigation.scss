@@ -53,6 +53,8 @@
                 opacity: 1;
                 padding-top: 0.9rem;
                 -webkit-transition: height .4s cubic-bezier(0, 1.06, 0.78, 1.06), flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), -webkit-flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), padding-top .4s cubic-bezier(0, 1.06, 0.78, 1.06);
+                -moz-transition: height .4s cubic-bezier(0, 1.06, 0.78, 1.06), flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), -webkit-flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), padding-top .4s cubic-bezier(0, 1.06, 0.78, 1.06);
+                -o-transition: height .4s cubic-bezier(0, 1.06, 0.78, 1.06), flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), -webkit-flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), padding-top .4s cubic-bezier(0, 1.06, 0.78, 1.06);
                 transition: height .4s cubic-bezier(0, 1.06, 0.78, 1.06), flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), -webkit-flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), padding-top .4s cubic-bezier(0, 1.06, 0.78, 1.06);
 
                 @media (min-width: 650px) {

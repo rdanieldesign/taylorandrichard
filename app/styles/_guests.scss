@@ -76,5 +76,9 @@
                 @include thin-btn-hover;
             }
         }
+
+        &__divider {
+            margin: 2rem 0;
+        }
     }
 }
