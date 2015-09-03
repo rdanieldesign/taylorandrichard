@@ -1,0 +1,28 @@
+.end {
+
+    &__image {
+        margin: 1rem auto 0 auto;
+        border-radius: 2px;
+        display: block;
+        width: 30rem;
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    &__icon {
+        height: 1.6rem;
+        margin: 1.4rem;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+
+        @media (min-width: 500px) {
+            height: 2rem;
+        }
+    }
+}
