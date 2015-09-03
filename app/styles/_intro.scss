@@ -7,14 +7,18 @@
     }
 
     &_icon {
-        height: 2rem;
+        height: 1.6rem;
+
+        @media (min-width: 500px) {
+            height: 2rem;
+        }
     }
 
     h1 {
         text-align: center;
-        font-size: 5rem;
+        font-size: 4.2rem;
         line-height: 5rem;
-        margin: 2rem 0 1.1rem;
+        margin: 1.6rem 0 1.1rem;
         vertical-align: middle;
 
         @media (min-width: 500px) {
@@ -36,13 +40,13 @@
 
     .amp {
         @extend h1;
-        font-size: 2.2rem;
+        font-size: 2rem;
+        line-height: 2rem;
         display: block;
         margin: 0;
         width: 100%;
 
         @media (min-width: 500px) {
-            font-size: 2rem;
             display: inline;
             width: auto;
         }
@@ -51,6 +55,7 @@
             display: block;
             width: 100%;
             font-size: 3rem;
+            line-height: 4rem;
         }
 
         @media (min-width: 850px) {

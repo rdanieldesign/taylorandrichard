@@ -31,8 +31,6 @@
             border-bottom: $thin-border;
             opacity: 0;
             padding-top: 0;
-            -webkit-transition: height .4s ease-out, flex .4s ease-out, padding-top .4s ease-out;
-            transition: height .4s ease-out, flex .4s ease-out, padding-top .4s ease-out;
 
             @media (min-width: 650px) {
                 opacity: 1;
@@ -47,12 +45,12 @@
 
             .active & {
                 height: 3rem;
-                -webkit-flex: 0 0 4rem;
+                -webkit-flex: 0 0 3rem;
                 flex: 0 0 3rem;
                 opacity: 1;
                 padding-top: 0.9rem;
-                -webkit-transition: height .4s cubic-bezier(0, 1.06, 0.78, 1.06), flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), padding-top .4s cubic-bezier(0, 1.06, 0.78, 1.06);
-                transition: height .4s cubic-bezier(0, 1.06, 0.78, 1.06), flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), padding-top .4s cubic-bezier(0, 1.06, 0.78, 1.06);
+                -webkit-transition: height .4s cubic-bezier(0, 1.06, 0.78, 1.06), flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), -webkit-flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), padding-top .4s cubic-bezier(0, 1.06, 0.78, 1.06);
+                transition: height .4s cubic-bezier(0, 1.06, 0.78, 1.06), flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), -webkit-flex .4s cubic-bezier(0, 1.06, 0.78, 1.06), padding-top .4s cubic-bezier(0, 1.06, 0.78, 1.06);
             }
 
             &-mobile {

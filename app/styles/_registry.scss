@@ -1,6 +1,6 @@
 .registry-options {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   height: calc(100vh - 14rem);
   flex-flow: column nowrap;
@@ -8,15 +8,18 @@
 	@media (min-width: 850px){
 		flex-flow: row nowrap;
 		height: auto;
+        justify-content: space-between;
 	}
 
   &__item {
-    flex: 0 0 32%;
+    flex: 1 1 auto;
     display: flex;
+    max-height: 10rem;
     align-items: center;
 
-		@media (min-width: 650px){
+		@media (min-width: 850px){
 			height: 16rem;
+            flex: 0 0 32%;
 		}
 
     a {
