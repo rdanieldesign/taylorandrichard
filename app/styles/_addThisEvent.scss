@@ -15,14 +15,19 @@
 			background-color: $white;
 			display: none;
 			width: 100%;
-			height: 3.5rem;
+			height: 3rem;
 			padding: 1rem 0;
 			position: absolute;
 
 			@for $i from 1 through 5 {
 			    &:nth-child(#{$i}) {
-			      top: calc((#{$i} - 1) * 3.5rem);
+			      top: calc(((#{$i} - 1) * 3rem) + (2px * #{$i}));
 			    }
+			}
+
+			&:nth-child(5){
+				border-bottom-left-radius: 2px;
+				border-bottom-right-radius: 2px;
 			}
 		}
 	}
@@ -30,16 +35,17 @@
 	&_dropdown {
 
 		span {
-			border: $thin-border;
-			border-color: $white;
 			border-top: 0;
-			background-color: $black;
+			background-color: $grey;
 			color: $white;
+
+			&:hover {
+				@include thin-btn-hover;
+			}
 		}
 	}
 
 	&-selected {
-		content: 'Close';
 
 		span {
 			display: block;
