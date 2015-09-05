@@ -1,0 +1,47 @@
+.slick {
+
+    &-slider {
+        display: flex;
+
+        button {
+            background:none;
+            border:none;
+            font-size:1em;
+        }
+    }
+
+    &-arrow {
+        flex: 0 8rem;
+
+        @media (min-width: 500px) {
+            flex: 0 12rem;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &-prev {
+
+        img {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+    }
+
+    &-next {
+
+    }
+
+    &-list {
+        margin: 0 .5rem;
+
+        @media (min-width: 500px) {
+            margin: 0 2rem;
+        }
+    }
+}
