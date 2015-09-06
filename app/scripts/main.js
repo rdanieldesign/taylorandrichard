@@ -5,8 +5,6 @@ var TAR = {
 	init: function(){
 		this.scrollAnimation();
 		this.toggleNav();
-		// this.detectScroll();
-
 		this.navShowing = false;
 		this.carousel();
 	},
@@ -41,22 +39,6 @@ var TAR = {
 				self.navShowing = true;
 			}
 		});
-	},
-
-	detectScroll: function(){
-		var lastScrollTop = $('.content').scrollTop();
-		var calculateScroll = _.throttle(function(){
-			var st = $(this).scrollTop();
-			if (st > lastScrollTop + 15){
-				$('.navigation, .top').hide();
-				$('.container-fullscreen').css('min-height', '100vh');
-			} else if(st < lastScrollTop - 15) {
-				$('.navigation, .top').show();
-				$('.container-fullscreen').css('min-height', 'calc(100vh - 4rem)');
-			}
-			lastScrollTop = st;
-		}, 250);
-		$('.content').scroll(calculateScroll);
 	},
 
 	carousel: function(){
