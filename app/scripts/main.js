@@ -42,14 +42,18 @@ var TAR = {
 	},
 
 	carousel: function(){
-		$('.end__carousel').slick({
-			dots: false,
-			infinite: true,
-			speed: 300,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			prevArrow: '<button type="button" class="slick-prev"><img src="images/carousel-arrow-white.svg" alt="Previous Image"></button>',
-			nextArrow: '<button type="button" class="slick-next"><img src="images/carousel-arrow-white.svg" alt="Next Image"></button>'
+		$(window).load(function(){
+			$('.end__carousel').slick({
+				dots: false,
+				infinite: true,
+				speed: 300,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				prevArrow: '<button type="button" class="slick-prev"><img src="images/carousel-arrow-white.svg" alt="Previous Image"></button>',
+				nextArrow: '<button type="button" class="slick-next"><img src="images/carousel-arrow-white.svg" alt="Next Image"></button>',
+				autoplay: true,
+				autoplaySpeed: 5000
+			});
 		});
 	}
 };
