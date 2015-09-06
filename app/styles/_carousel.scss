@@ -18,15 +18,14 @@
 
     &-arrow {
         flex: 0 42px;
-        width: 42px;
+        min-width: 42px;
         height: 42px;
         border-radius: 50%;
         background-color: $grey;
+        padding: 0;
 
         @media (min-width: 500px) {
             flex: 0 12rem;
-            height: 42px;
-            width: 42px;
         }
 
         &:hover {
@@ -34,7 +33,7 @@
         }
 
         img {
-            width: 85%;
+            width: 60%;
             height: 100%;
         }
     }
