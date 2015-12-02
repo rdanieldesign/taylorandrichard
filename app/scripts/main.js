@@ -66,8 +66,16 @@ var TAR = {
 			speed: 300,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			prevArrow: '<button type="button" class="slick-prev"><img src="images/carousel-arrow-white.svg" alt="Previous Image"></button>',
-			nextArrow: '<button type="button" class="slick-next"><img src="images/carousel-arrow-white.svg" alt="Next Image"></button>'
+			autoplay: true,
+			autoplaySpeed: 3000,
+			prevArrow: '<button type="button" class="slick-prev"><img src="images/carousel-arrow.svg" alt="Previous Image"></button>',
+			nextArrow: '<button type="button" class="slick-next"><img src="images/carousel-arrow.svg" alt="Next Image"></button>'
+		});
+
+		$('.slick-list').hover(function(){
+			$('.end__carousel').addClass('disabled');
+		}, function(){
+			$('.end__carousel').removeClass('disabled');
 		});
 	}
 };
