@@ -59,6 +59,14 @@
                     text-align: left;
                 }
             }
+
+            a {
+                text-decoration: underline;
+
+                &:hover {
+                    color: $black;
+                }
+            }
         }
 
         &__cta {
