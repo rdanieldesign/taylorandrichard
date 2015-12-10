@@ -2,6 +2,14 @@
 
 	&__description {
 		text-align: center;
+
+		a {
+			text-decoration: underline;
+
+	        &:hover {
+	            color: $black;
+	        }
+		}
 	}
 
 	&__headline {
