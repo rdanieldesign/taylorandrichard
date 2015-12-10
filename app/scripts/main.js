@@ -59,6 +59,10 @@ var TAR = {
 		}, function(){
 			$('.end__carousel').removeClass('disabled');
 		});
+
+		$(document).ready(function(){
+			$('.slick-track').width('10000px');
+		});
 	}
 };
 
